@@ -9,7 +9,7 @@ import com.example.enumber.BrowserType;
 
 public class StringToBrowserTypeConverter implements Converter<BrowserType> {
 
-    @Override
+    @Override       
     public BrowserType convert(Method method, String browserName) {
        
         Map<String, BrowserType> stringBrowserTypeMap =  Map.of("CHROME", BrowserType.CHROME, "Edge", BrowserType.EDGE);
